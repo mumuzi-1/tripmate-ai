@@ -1,4 +1,4 @@
-﻿# TripMate AI  智能旅行规划 Agent
+# TripMate AI  智能旅行规划 Agent
 
 基于 **LangGraph + FastAPI + Vue 3 + MySQL + 高德地图** 构建的智能旅行规划平台。
 
@@ -167,7 +167,26 @@ npm run dev
 
 注意：首次运行前，需要按项目实际配置准备数据库、API 密钥以及相关环境变量。
 
-## 七、项目说明
+
+<!-- TRIPMATE_SCREENSHOTS_START -->
+
+## 七、项目运行截图
+
+### 1. AI 智能旅行规划
+
+![AI Planning](docs/screenshots/ai-planning.png)
+
+### 2. 交互式旅行地图
+
+![Interactive Map](docs/screenshots/interactive-map.png)
+
+### 3. 公共交通备选路线
+
+![Transit Route](docs/screenshots/transit-route.png)
+
+<!-- TRIPMATE_SCREENSHOTS_END -->
+
+## 八、项目说明
 
 - 项目中的 API Key、数据库密码等敏感信息不提交至公开仓库。
 - 地图 POI 和路线缓存属于本地运行数据，默认不上传。
@@ -175,7 +194,7 @@ npm run dev
 - 高德返回的备选交通方案可能与历史规划版本不同，界面会明确区分。
 - 项目目前以本地开发和功能验证为主，尚未提供公开在线演示地址。
 
-## 八、后续优化方向
+## 九、后续优化方向
 
 - 完善地图线路站点、换乘详情与交互展示。
 - 增强 AI 行程规划的路线合理性校验。
