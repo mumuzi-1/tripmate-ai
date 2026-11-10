@@ -1,0 +1,32 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated files
+*.log/backend/.env
+/frontend/.env.local
+# Local map and route caches
+/backend/data/poi_cache.json
+/backend/data/route_geometry_cache.json
+# Local development backups
+*.bak
+*.bak.*
+*.before-*.bak
+# Local Python caches
+
+*.planning-fix-backup

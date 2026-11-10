@@ -1,0 +1,31 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "hrms", email = "2455258062@qq.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.1",
+    "email-validator>=2.3.0",
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
+    "langchain-core>=1.7.6",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic-settings>=2.16.2",
+    "pyjwt>=2.15.1",
+    "pymysql>=1.2.3",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.1.8",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
