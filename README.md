@@ -64,6 +64,30 @@
 
 ## 三、系统架构
 
+```mermaid
+flowchart TD
+    U["用户"] --> FE["Vue 3 前端"]
+    FE --> API["FastAPI 后端"]
+
+    API --> AUTH["JWT 用户认证"]
+    API --> DB["MySQL 数据库"]
+    API --> AGENT["LangGraph AI Agent"]
+
+    AGENT --> REQ["需求解析"]
+    REQ --> POI["景点发现"]
+    POI --> VERIFY["POI 真实性验证"]
+    VERIFY --> PLAN["行程生成"]
+    PLAN --> CHECK["路线校验"]
+    CHECK --> REPAIR["规划修复"]
+
+    AGENT --> LLM["大语言模型 API"]
+    POI --> AMAP["高德地图 API"]
+    VERIFY --> AMAP
+    CHECK --> AMAP
+
+    FE --> MAP["高德交互式地图"]
+```
+
 ```text
 用户 / Vue 3 前端
        |
